@@ -5,7 +5,7 @@ VERSION=$(shell git describe --tags --abbrev=0)
 all: docs compile checksum clean
 
 test:
-	/usr/bin/go test -timeout 30s github.com/terraform-routeros/terraform-provider-routeros
+	/usr/bin/go test -timeout 30s github.com/artashesbalabekyan/terraform-provider-routeros
 
 docs:
 	go generate
